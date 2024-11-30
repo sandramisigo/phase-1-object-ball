@@ -117,11 +117,7 @@ function gameObject(){
 }
 
 
-// function homeTeamName() {
-//     return gameObject()["home"]["teamName"];
-//   }
-  
-//   console.log(homeTeamName());
+// function numPointsScored
 
 function numPointsScored(playerName) {
     const game = gameObject(); // Get the game object
@@ -141,13 +137,13 @@ function numPointsScored(playerName) {
     return "Player not found"; // If player is not found in any team
 }
 
-// Example usage
+// Example 
 console.log(numPointsScored("Alan Anderson")); // Returns 22
 console.log(numPointsScored("Reggie Evans")); // Returns 12
 console.log(numPointsScored("Brooke Lopez"));  // Returns 17
 console.log(numPointsScored("Nonexistent Player")); // Returns "Player not found"
 
-
+//function shoeSize
 function shoeSize(playerName) {
     const game = gameObject(); // Get the game object
 
@@ -166,13 +162,14 @@ function shoeSize(playerName) {
     return "Player not found"; // If player is not found in any team
 }
 
+//function teamNames
 function teamNames() {
     const game = gameObject(); // Get the game object
     const teams = [game.home.teamName, game.away.teamName]; // Get both team names
     return teams;
 }
 
-
+//function teamColors
 function teamColors(teamName) {
     const game = gameObject(); // Get the game object
 
@@ -186,6 +183,7 @@ function teamColors(teamName) {
     }
 }
 
+//function playerNumbers
 function playerNumbers(teamName) {
     const game = gameObject(); // Get the game object
     const numbers = [];
@@ -206,6 +204,7 @@ function playerNumbers(teamName) {
     return numbers; // Return the array of jersey numbers
 }
 
+//function playerStats
 function playerStats(playerName) {
     const game = gameObject(); // Get the game object
 
@@ -262,7 +261,7 @@ function bigShoeRebounds() {
 console.log(bigShoeRebounds());  // Returns 19 (Brooke Lopez's rebounds)
 
 
-// Function to find the player with the most points
+// Function find the player with the most points
 function mostPointsScored() {
     const game = gameObject();  // Get the game object
     let maxPoints = 0;  // Variable to store the maximum points
